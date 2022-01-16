@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List</title>
+  </head>
+  <body>
+
+    <!-- To Do List -->
+    <div class="container-fluid p-5 d-flex justify-content-center">
+      <div class="row w-75">
+
+        <nav class="nav nav-tabs nav-fill">
+        <a class="nav-link active" th:href="@{index}">View</a>
+        <a class="nav-link" th:href="@{add}">Add</a>
+        </nav>
+
+        <h1 class="pt-5 pb-3"><i class="far fa-list-alt"></i>To-Do List</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                  <th class="w-10">Done</th>
+                  <th class="w-20">Title</th>
+                  <th class="w-50">Description</th>
+                  <th class="w-20">Target Date</th>
+                </tr>
+              </thead>
+              <tbody id="todo-item">
+              </tbody>
+        </table>
+
+      </div>
+    </div>
+    <!-- End of To Do List -->
+
+    <!-- Add toDoController.js and toDoListing.js -->
+    <script src="js/toDoController.js"></script>
+    <script src="js/toDoListing.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Add style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Add Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Add FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/5704215aa3.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
