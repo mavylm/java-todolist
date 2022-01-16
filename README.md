@@ -1,2 +1,4 @@
-# java-todolist
-Create a Todo List app using Spring Boot
+# TO-DO LIST
+ *Spring Boot: To build a To-Do List Web App*
+
+---
